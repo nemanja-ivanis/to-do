@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo App</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+
+</head>
+
+<body>
+  <div class="container">
+    <!--Add task section-->
+    <div class="col-md-12">
+      <h2>To Do List</h2>
+      <p>
+        <label for="new-task">Add Item</label>
+        <input id="new-task" type="text">
+        <button id="add" class="btn btn-primary">Add</button>
+        <div class="warning"></div>
+        <div class="success"></div>
+      </p>
+    </div>
+    <!--end Add task section-->
+
+
+    <!--All tasks section-->
+      <div class="task-section col-md-3" id="all-section">
+      <h3>All
+        <span id="counter-all"></span></h3>
+        <ul id="all">
+
+
+        </ul>
+        <div id="all-buttons">
+          <button id="remove-all" class="btn btn-danger">Remove All</button>
+          <button id="remove-selected" class="btn btn-warning">Remove Selected</button>
+
+        </div>
+
+      </div>
+      <!--end All tasks section-->
+
+
+      <!--Active tasks section-->
+      <div class="task-section col-md-3" id="active-section">
+        <h3>Active
+          <span id="counter-active"></span></h3>
+          <ul id="incomplete-tasks">
+
+
+          </ul>
+        </div>
+        <!--end Active tasks section-->
+
+        <!--Completed tasks section-->
+        <div class="task-section col-md-3" id="completed-section">
+          <h3>Completed<span id="counter-completed"></span></h3>
+          <ul id="completed-tasks">
+
+          </ul>
+        </div>
+        <!--end Completed tasks section-->
+
+        <!--Favorite tasks section-->
+        <div class="task-section col-md-3" id="favorite-section">
+          <h3>Favorite<span id="counter-favorite"></span></h3>
+          <ul id="favorite-tasks">
+
+          </ul>
+        </div>
+        <!--end Favorite tasks section-->
+
+      </div>
+      <script src='js/jquery.js'></script>
+
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+      <script src="js/index.js"></script>
+    </body>
+
+    </html>
+    
+
+    
+    
